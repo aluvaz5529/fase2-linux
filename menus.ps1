@@ -1,3 +1,14 @@
+$dc=hgeneral.es
+#esto para que lea y para que importes el csv
+fntLeerDirectorioBase() { 
+	while IFS=, read c1 c2 #columnas del fichero, ejemplo c1, c2,...,cn etc...
+	do
+  		#Leer dc dc
+   		var1=${c1} #con esto ponemos en la variable variable var1 el contenido de la columna 1 (c1) del fichero que estamos 					#leyendo
+	
+	done < $csv #aquí se pone el fichero csv con la información a leer en el bucle
+}
+
 while [ opcion != "" ]
 do
 	clear
